@@ -1,0 +1,81 @@
+.suggest {
+  padding-block: 55px 120px;
+}
+
+.slider {
+  position: relative;
+  max-width: 90%;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  top: 145px;
+  right: 240px;
+  text-align: right;
+  color: #fff;
+  max-width: 410px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  padding-block: 35px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 10px 1px #00000025;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-inline: 50px;
+}
+
+.saleTitle {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 64px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.description {
+  font-size: 36px;
+  font-weight: 500;
+  max-width: 100%;
+}
+
+.control {
+  border-radius: 50%;
+  position: relative;
+  width: 57px;
+  height: 57px;
+  transition: var(--transition-primary);
+}
+
+.control svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.right {
+  transform: translate(-55%, -50%);
+}
+
+.left {
+  transform: translate(-35%, -50%);
+}
+
+.control:hover {
+  background-color: var(--primary-accent-color);
+}
