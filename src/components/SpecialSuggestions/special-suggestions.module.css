@@ -11,11 +11,12 @@
   object-fit: cover;
   width: 100%;
   height: auto;
+  margin-bottom: 25px;
 }
 
 .text {
   position: absolute;
-  top: 145px;
+  top: 175px;
   right: 240px;
   text-align: right;
   color: #fff;
@@ -39,12 +40,13 @@
 }
 
 .saleTitle {
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
   font-size: 64px;
 }
 
-.row {
+.suggest .container {
+  display: flex;
   justify-content: center;
 }
 
@@ -78,4 +80,16 @@
 
 .control:hover {
   background-color: var(--primary-accent-color);
+}
+
+.lines {
+  display: flex;
+  column-gap: 12px;
+  justify-content: center;
+}
+
+.line {
+  width: 120px;
+  height: 6px;
+  background-color: var(--text-color-secondary);
 }

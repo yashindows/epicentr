@@ -6,7 +6,7 @@ function SpecialSuggestions() {
   return (
     <>
       <section id="next" className={classes.suggest}>
-        <div className="container">
+        <div className={classes.container}>
           <div className={classes.row}>
             <div className={classes.slider}>
               <div className={classes.title}>
@@ -46,6 +46,11 @@ function SpecialSuggestions() {
               <div className={classes.text}>
                 <div className={classes.saleTitle}>Акции на что</div>
                 <div className={classes.description}>Описание акции...</div>
+              </div>
+              <div className={classes.lines}>
+                <div className={classes.line}></div>
+                <div className={classes.line}></div>
+                <div className={classes.line}></div>
               </div>
             </div>
           </div>

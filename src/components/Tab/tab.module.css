@@ -1,0 +1,53 @@
+.tab {
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius-primary);
+  display: grid;
+  grid-template-areas:
+    "title btn"
+    "text text";
+  justify-content: space-between;
+  grid-template-columns: 1fr 8%;
+  transition: 0.1s;
+  width: 100%;
+}
+
+.tabTitle {
+  width: 100%;
+  grid-area: title;
+}
+
+.tabTitle,
+.textHidden {
+  padding: 20px;
+}
+
+.moreInfo {
+  grid-area: btn;
+  padding: 10px;
+  border-radius: var(--border-radius-primary);
+  max-width: 80%;
+  align-self: center;
+}
+
+.moreInfo svg {
+  pointer-events: none;
+  transition: var(--transition-primary);
+}
+
+.moreInfo[class*="active"] svg {
+  transform: rotate(-45deg);
+}
+
+.moreInfo:hover {
+  background-color: #f0f0f0;
+}
+
+.textHidden {
+  grid-area: text;
+  font-size: 32px;
+  color: var(--text-color-secondary);
+  max-width: 90%;
+  padding-block: 35px;
+  transition: 0.1s;
+}
