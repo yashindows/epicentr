@@ -3,7 +3,7 @@ import classes from "./footer.module.css"
 
 function Footer() {
   return (
-    <footer className={classes.footer}>
+    <footer id="contacts" className={classes.footer}>
       <div className="container">
         <div className={classes.footerTop}>
           <div className={classes.links}>

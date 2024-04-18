@@ -1,5 +1,6 @@
 import React from "react"
 import classes from "./banner.module.css"
+import { Link } from "react-router-dom"
 
 function Banner() {
   return (
@@ -17,9 +18,9 @@ function Banner() {
               </li>
               <li className={classes.item}>Реклама на мониторах</li>
             </ul>
-            <a href="#services" className={classes.btn}>
+            <Link to="/services" className={classes.btn}>
               Подробнее
-            </a>
+            </Link>
           </div>
           <a className={classes.next} href="#next">
             <svg

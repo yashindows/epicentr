@@ -20,7 +20,7 @@
   right: 240px;
   text-align: right;
   color: #fff;
-  max-width: 410px;
+  max-width: 510px;
 }
 
 .title {
@@ -91,5 +91,5 @@
 .line {
   width: 120px;
   height: 6px;
-  background-color: var(--text-color-secondary);
+  background-color: var(--primary-accent-color);
 }

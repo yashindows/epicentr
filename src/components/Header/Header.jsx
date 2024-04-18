@@ -18,15 +18,15 @@ function Header() {
                   Услуги
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className="link" to="/prices">
                   Цены
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link className="link" to="/contacts">
+                <a href="#contacts" className="link" to="#contacts">
                   Контакты
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

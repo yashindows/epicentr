@@ -51,3 +51,8 @@
   padding-block: 35px;
   transition: 0.1s;
 }
+
+.textHidden::first-letter,
+.tabTitle::first-letter {
+  text-transform: uppercase;
+}

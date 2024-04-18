@@ -1,8 +1,22 @@
-import React from "react"
 import classes from "./special-suggestions.module.css"
-import image from "../../assets/Rectangle 6.png"
+import { collection, onSnapshot } from "firebase/firestore"
+import db from "../../firebase"
+import React, { useEffect, useState } from "react"
+import { register } from "swiper/element"
+register()
 
 function SpecialSuggestions() {
+  const [assets, setAssets] = useState([
+    { title: "Загрузка...", id: "loading" },
+  ])
+
+  useEffect(
+    () =>
+      onSnapshot(collection(db, "sales"), (snapshot) =>
+        setAssets(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+      ),
+    []
+  )
   return (
     <>
       <section id="next" className={classes.suggest}>
@@ -41,14 +55,20 @@ function SpecialSuggestions() {
                 </svg>
               </button>
             </div>
-            <img src={image} alt="" className={classes.img} />
-            <div className={classes.text}>
-              <div className={classes.saleTitle}>Акции на что</div>
-              <div className={classes.description}>Описание акции...</div>
-            </div>
+            {assets.map((asset) => (
+              <div key={asset.id} className="content">
+                <img
+                  src={"src/assets/" + asset.image}
+                  alt=""
+                  className={classes.img}
+                />
+                <div className={classes.text}>
+                  <div className={classes.saleTitle}>{asset.title}</div>
+                  <div className={classes.description}>{asset.description}</div>
+                </div>
+              </div>
+            ))}
             <div className={classes.lines}>
-              <div className={classes.line}></div>
-              <div className={classes.line}></div>
               <div className={classes.line}></div>
             </div>
           </div>

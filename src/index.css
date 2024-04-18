@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap");
+@import url("./assets/fonts/stylesheet.css");
 @import url("reset-css");
 :root {
   --primary-accent-color: #fdd207;
@@ -46,9 +46,8 @@ a {
 
 body,
 body input {
-  font-family: "Lato Regular", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -59,12 +58,19 @@ body input {
   max-width: 100%;
   margin-inline: auto;
   position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 [class*="container"] {
   max-width: 1880px;
   margin-inline: auto;
   padding-inline: 40px;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 [class*="row"] {
