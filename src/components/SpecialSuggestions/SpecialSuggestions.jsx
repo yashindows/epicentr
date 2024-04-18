@@ -57,11 +57,7 @@ function SpecialSuggestions() {
             </div>
             {assets.map((asset) => (
               <div key={asset.id} className="content">
-                <img
-                  src={"src/assets/" + asset.image}
-                  alt=""
-                  className={classes.img}
-                />
+                <img src={"/" + asset.image} alt="" className={classes.img} />
                 <div className={classes.text}>
                   <div className={classes.saleTitle}>{asset.title}</div>
                   <div className={classes.description}>{asset.description}</div>
