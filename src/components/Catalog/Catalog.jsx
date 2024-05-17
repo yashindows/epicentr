@@ -91,6 +91,7 @@ function Catalog() {
         <div className={classes.services}>
           {services.map((service) => (
             <div key={service.id} className={classes.card}>
+              <Link className={classes.cardLink} to={service.id}></Link>
               <div className={classes.title}>{service.title}</div>
               <img src={"/" + service.image} alt="" />
             </div>

@@ -7,6 +7,8 @@ import SpecialSuggestions from "./SpecialSuggestions/SpecialSuggestions"
 import Actions from "./Actions/Actions"
 import Footer from "./Footer/Footer"
 import Catalog from "./Catalog/Catalog"
+import Service from "./Service/Service"
+import Admin from "./Admin/Admin"
 
 const Router = () => {
   return (
@@ -30,6 +32,22 @@ const Router = () => {
             </main>
           }
           path="/services"
+        />
+        <Route
+          element={
+            <main className="main">
+              <Service />
+            </main>
+          }
+          path="/services/:id"
+        />
+        <Route
+          element={
+            <main className="main">
+              <Admin />
+            </main>
+          }
+          path="/admin"
         />
         <Route
           element={

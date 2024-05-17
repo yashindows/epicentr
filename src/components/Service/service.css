@@ -1,0 +1,27 @@
+.service .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 170px;
+  row-gap: 70px;
+}
+
+.service img {
+  max-height: 500px;
+}
+
+.service-title {
+  font-size: 48px;
+}
+
+.info {
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+}
+
+.service .btn {
+  padding: 10px 28px;
+  font-size: 36px;
+}

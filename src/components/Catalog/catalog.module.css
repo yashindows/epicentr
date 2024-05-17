@@ -102,3 +102,9 @@
   opacity: 0;
   text-align: center;
 }
+
+.cardLink {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+}
